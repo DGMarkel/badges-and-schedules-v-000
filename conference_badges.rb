@@ -1,3 +1,3 @@
 def badge_maker(name)
-  names.each{|names| "Hello, my name is #{names}."}
+  names.each{|attendees| "Hello, my name is #{attendees}."}
 end
