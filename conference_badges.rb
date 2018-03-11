@@ -15,8 +15,9 @@ def assign_rooms(names)
 end
 
 def printer(names)
-  badges_and_room_assignments = []
-  batch_badge_creator(names).each{|badge| badges_and_room_assignments.push(badge)}
-  assign_rooms(names).each{|room_assignments| badges_and_room_assignments.push(room_assignments)}
-  puts badges_and_room_assignments
+  names.each do |attendee| 
+   badges_and_room_assignments.push(attendee)
+   assign_rooms(attendee)
+ end
+  names
 end
