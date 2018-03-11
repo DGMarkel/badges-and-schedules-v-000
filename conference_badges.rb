@@ -13,3 +13,8 @@ def assign_rooms(names)
   names.each{|name| room_assignments.push("Hello, #{name}! You'll be assigned to room #{names.index(name) + 1}!")}
   room_assignments
 end
+
+def printer(names)
+  batch_badge_creater.each{|badge| puts badge}
+  assign_rooms.each{|room_assignments| puts room_assignments}    
+end
