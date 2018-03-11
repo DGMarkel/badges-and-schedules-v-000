@@ -16,7 +16,7 @@ end
 
 def printer(names)
   names.each do |attendee|
-   badges_and_room_assignments.push(attendee)
+   badges_and_room_assignments(attendee)
    assign_rooms(attendee)
  end
   names
