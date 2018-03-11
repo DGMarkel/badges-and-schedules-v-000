@@ -3,8 +3,8 @@ def badge_maker(name)
 end
 
 def batch_badge_creator(names)
+  badges = []
   names.each do |name|
-    badge = badge_maker(name)
-    puts badge
+    badges.push(badge_maker(name))    
   end
 end
