@@ -15,9 +15,10 @@ def assign_rooms(names)
 end
 
 def printer(names)
+  blog = []
   names.each do |attendee|
-   badges_and_room_assignments(attendee)
-   assign_rooms(attendee)
+   blog.push(badges_and_room_assignments(attendee))
+   blog.push(assign_rooms(attendee))
  end
-  names
+  blog
 end
