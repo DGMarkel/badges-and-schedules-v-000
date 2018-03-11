@@ -9,10 +9,12 @@ def batch_badge_creator(names)
 end
 
 def assign_rooms(names)
-  names.each{|name| print "Hello, #{name}! You'll be assigned to room #{names.index(name) + 1}!"}
+  room_assignments = []
+  names.each{|name| room_assignments.push("Hello, #{name}! You'll be assigned to room #{names.index(name) + 1}!")}
+  room_assignments
 end
 
-def printer(names)
+def printer(batch_badge_creator(names), assign_rooms(names))
     names.each do |attendee|
       puts batch_badge_creator(attendee)
     end
